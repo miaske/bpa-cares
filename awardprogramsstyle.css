@@ -1,0 +1,297 @@
+/*
+ *  this stylesheet is to be used only
+ *	for all awards' program overview
+ *	webpages
+ */
+ 
+em {font-size:15px;}
+
+h1 {
+	font-size: 30px;
+	border-bottom: solid 5px #012348;
+	padding: 5px;
+	width: 161px;
+}
+
+h2 {
+	font-size: 24px;
+	padding: 5px;
+	border-left: solid 5px white;
+}
+
+h3 {
+	font-size: 22px;
+	text-shadow: 3px 2px 0 #B2161D, 5px 4px 0 rgba(0,0,0,0.15);
+}
+
+/*overview style*/
+#container {
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+	position: relative;
+	margin-top: 150px;
+	z-index: 3;
+	width: 60%;
+	height: 500px;
+	line-height: 1.5em;
+	background-color: #012348;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+#left {
+	background-color: white;
+	width: 50%;
+	height: 500px;
+	float: left;
+	padding: 20px;
+	box-shadow: 2px 0 3px white;
+	color: #012348;
+	font-weight: 900;
+	font-size: 15px;
+	z-index: 3;
+	text-align: justify;
+}
+
+#right {
+	background-color: transparent;
+	overflow-y: scroll;
+	width: 50%;
+	height: 500px;
+	float: right;
+	padding: 20px;
+	text-align: justify;
+	word-spacing: -1px;
+	font-size: 14px;
+	z-index: 1;
+}
+
+#left h1, #left h2 {
+	text-shadow: 3px 2px 0 white, 5px 4px 0 rgba(0,0,0,0.15);
+	padding-bottom: 8px;
+}
+
+#left li {
+	list-style-type: none;
+	line-height: 2em;
+}
+
+/* in div left*/
+.a {
+	text-decoration: none;
+	color: #012348;
+	border:none;
+}
+
+.a:hover {border-bottom: solid 2px #012348;}
+/*end*/
+
+#right h1, #right h2 {text-shadow: 3px 2px 0 #012348, 5px 4px 0 rgba(0,0,0,0.3);}
+
+#right::-scrollbar, .selectedBox::-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+#right::-webkit-scrollbar, .selectedBox::-webkit-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+#right::-moz-scrollbar, .selectedBox::-moz-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+#right::-o-scrollbar, .selectedBox::-o-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+#right::-ms-scrollbar, .selectedBox::-ms-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+
+#right::-scrollbar-thumb, .selectedBox::-scrollbar-thumb {background-color: #fff;}
+#right::-webkit-scrollbar-thumb, .selectedBox::-webkit-scrollbar-thumb {background-color: #fff;}
+#right::-moz-scrollbar-thumb, .selectedBox::-moz-scrollbar-thumb {background-color: #fff;}
+#right::-o-scrollbar-thumb, .selectedBox::-o-scrollbar-thumb {background-color: #fff;}
+#right::-ms-scrollbar-thumb, .selectedBox::-ms-scrollbar-thumb {background-color: #fff;}
+
+#right::-scrollbar-thumb:active, .selectedBox::-scrollbar-thumb:active {background-color: #f1f1f1;}
+#right::-webkit-scrollbar-thumb:active, .selectedBox::-webkit-scrollbar-thumb:active {background-color: #f1f1f1;}
+#right::-moz-scrollbar-thumb:active, .selectedBox::-moz-scrollbar-thumb:active {background-color: #f1f1f1;}
+#right::-o-scrollbar-thumb:active, .selectedBox::-o-scrollbar-thumb:active {background-color: #f1f1f1;}
+#right::-ms-scrollbar-thumb:active, .selectedBox::-ms-scrollbar-thumb:active {background-color: #f1f1f1;}
+/*end of overview style*/
+
+/*general info style*/
+#moreInfo {
+	background-color: #183758;
+	padding: 0;
+	font-size: 13px;
+	width: 100%;
+	height: 1000px;
+}
+
+#boxes {
+	position: relative;
+	width: 1100px;
+	height: 500px;
+	margin: auto;
+	padding: 100px;
+}
+
+#box1:hover, #box2:hover, #box3:hover {cursor: pointer;}
+
+#box1.unselectedBox:hover, #box1.originalBox:hover, #box2.unselectedBox:hover, #box2.originalBox:hover, #box3.unselectedBox:hover, #box3.originalBox:hover {
+	background-color: #A2141B;
+}
+
+#box2.originalBox, #box2.unselectedBox {
+	border-left: solid 1.5px #A2141B;
+	border-right: solid 1.5px #A2141B;
+}
+
+.originalBox {
+	position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+	margin: auto;
+    background-color: #A2141B;
+}
+
+.unselectedBox {
+	position: relative;
+	z-index: 1;
+	width: 40px;
+	height: 300px;
+	margin: auto;
+	float: left;
+	margin-top: 100px;
+}
+
+.selectedBox {
+	position: relative;
+	background-color: #A2141B;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+	z-index: 3;
+	overflow-y: auto;
+	color: white;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	float: left;
+}
+
+.originalBox, .unselectedBox {background-color: #B2161D;}
+
+.originalBox h2 {
+	text-align: left;
+	color: white;
+	text-shadow: 3px 2px 0 #B2161D, 5px 4px 0 rgba(0,0,0,0.15);
+	font-size: 30px;
+	border-left: groove 7px maroon;
+	max-width: 150px;
+	height: 150px;
+}
+
+.selectedBox h2 {
+	color: white;
+	text-align: center;
+	text-shadow: 3px 2px 0 #B2161D, 5px 4px 0 rgba(0,0,0,0.15);
+	font-size: 36px;
+	border: none;
+	line-height: 1em;
+}
+
+.selectedBox, .selectedBox li {
+	padding: 0 15px;
+	line-height: 2em;
+}
+.selectedBox li:first-of-type, .selectedBox dl:first-of-type, .selectedBox p:first-of-type {
+	margin-top: -30px;
+}
+
+.selectedBox p {
+	font-size: 18px;
+	line-height: 2em;
+	padding: 20px;
+	margin-left: -15px;
+	text-align: justify;
+}
+
+.hiddenContent1, .hiddenContent2, .hiddenContent3 {
+	display: none;
+	position: absolute;
+	width: auto;
+	z-index: 1;
+	margin: 0;
+}
+
+#faq {
+	position: relative;
+	margin: auto;
+	top: 70px;
+	z-index: 3;
+	text-align: center;
+	color: white;
+	clear: both;
+	font-size: 18px;
+	width: 900px;
+}
+
+#faq a {
+	color: #183758;
+	border: solid 20px white;
+	background-color: white;
+	font-weight: 900;
+	text-transform: uppercase;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+#faq a:hover {
+	color: white;
+	border: solid 20px #012348;
+	background-color: #012348;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+#faq a:active {box-shadow: none}
+/* end of general info style */
+
+/* award links style */
+#awardSection {
+	background-color: maroon;
+	padding: 40px 80px;
+	height: 650px;
+}
+
+.awardHead1, .awardHead2, .awardHead3, .awardHead4, .awardHead5, .awardHead6, .awardHead7 {
+	position: relative;
+	text-transform: capitalize;
+	color: black;
+	padding: 25px;
+	z-index: 4;
+	background-color: white;
+	transform: scale3d(.9, .9, .9);
+	-webkit-transform: scale3d(.9, .9, .9);
+	-moz-transform: scale3d(.9, .9, .9);
+	-o-transform: scale3d(.9, .9, .9);
+	-ms-transform: scale3d(.9, .9, .9);
+	transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+}
+
+.awardHead1:hover, .awardHead2:hover, .awardHead3:hover, .awardHead4:hover, .awardHead5:hover, .awardHead6:hover, .awardHead7:hover {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+	-moz-transform: scale3d(1, 1, 1);
+	-o-transform: scale3d(1, 1, 1);
+	-ms-transform: scale3d(1, 1, 1);
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	background-color: tan;
+}
+/* end of award link style */

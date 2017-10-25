@@ -1,0 +1,289 @@
+/*
+ *  this stylesheet is to be used only
+ *	for each individual awards'
+ *	webpage
+ */
+
+#cover {
+    background: #f1f1f1;
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#blockContainer {
+    position: relative;
+    top: 0px;
+    width: calc(81% + 10px);
+    height: 745px;
+    margin: 120px auto;
+    color: #024793;
+}
+
+#blocks {
+    margin: 0 10px;
+    margin-top: 300px;
+}
+
+#head {
+    position: fixed;
+    z-index: 6;
+    top: 125px;
+    width: calc(81% + 10px);
+    height: 150px;
+    background-color: #012348;
+    color: white;
+    padding: 33px;
+    font-size: 20px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-animation: all 300ms ease;
+    -o-animation: all 300ms ease;
+    -ms-animation: all 300ms ease;
+    box-shadow: 3px 3px 16px rgba(0, 0, 1, 0.5) !important;
+}
+
+#head.scroll {
+    background: radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -webkit-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -moz-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -o-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -ms-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-size: 400% 400%;
+	background-color: #183758;
+    animation: gradient 9s ease infinite;
+	-webkit-animation: gradient 9s ease infinite;
+	-moz-animation: gradient 9s ease infinite;
+	-o-animation: gradient 9s ease infinite;
+	-ms-animation: gradient 9s ease infinite;
+    top: 80px !important;
+}
+
+#head h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-left: solid 3px white;
+    padding-left: 10px;
+}
+
+#pagination {
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+#pagination div {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pag {border-bottom: solid 1.5px white;}
+
+#lArrow, #rArrow {
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-animation: all 300ms ease;
+    -o-animation: all 300ms ease;
+    -ms-animation: all 300ms ease;
+    font-size: 32px;
+}
+
+#lArrow.lMove {transform: translateX(-10px);}
+
+#rArrow.rMove {transform: translateX(10px);}
+
+.block {
+    position: static;
+    padding: 15px;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.block h2 {
+    border-bottom: solid 3.5px #023b7a;
+    padding-bottom: 3px;
+}
+
+#one h2 {width: 120px;}
+#two h2 {width: 161px;}
+#three h2 {max-width: 303px;}
+#five h2 {width: 160px;}
+
+#one h2, #two h2, #three h2, #five h2 {text-shadow: 2px 1px 0 white, 4px 3px 0 rgba(0,0,0,0.15);}
+
+#one, #two, #three, #five {
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-animation: all 300ms ease;
+    -o-animation: all 300ms ease;
+    -ms-animation: all 300ms ease;
+	overflow-y: auto;
+}
+
+.block::-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.block::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.block::-moz-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.block::-o-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.block::-ms-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.block::-scrollbar-thumb {
+    background-color: #012348;
+}
+.block::-webkit-scrollbar-thumb {
+    background-color: #012348;
+}
+.block::-moz-scrollbar-thumb {
+    background-color: #012348;
+}
+.block::-o-scrollbar-thumb {
+    background-color: #012348;
+}
+.block::-ms-scrollbar-thumb {
+    background-color: #012348;
+}
+
+#one {
+    width: calc(65% - 5px);
+    height: 250px;
+    z-index: 3;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+#two {
+    width: calc(35% - 5px);
+    height: 500px;
+    z-index: 3;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+#three {
+    width: calc(32.5% - 7.5px);
+    height: 485px;
+    z-index: 2;
+    clear: none;
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+
+#four {
+    width: calc(32.5% - 7.5px);
+    height: 240px;
+    z-index: 2;
+    clear: none;
+    float: left;
+    margin: 5px 5px 0 5px;
+    overflow: hidden;
+	display: table;
+    text-align: center;
+    white-space: normal;
+}
+
+#four h1 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #023b7a;
+    font-weight: 900;
+    text-transform: uppercase;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#four:hover {
+    background: radial-gradient(ellipse at center, #012348 0%, #a0131a 25%, #012348 50%, #a0131a 75%, #0C1C2D 100%);
+	background: -webkit-radial-gradient(ellipse at center, #012348 0%, #a0131a 25%, #012348 50%, #a0131a 75%, #0C1C2D 100%);
+	background: -moz-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -o-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background: -ms-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-size: 400% 400%;
+	background-color: #183758;
+    animation: gradient 9s ease infinite;
+	-webkit-animation: gradient 9s ease infinite;
+	-moz-animation: gradient 9s ease infinite;
+	-o-animation: gradient 9s ease infinite;
+	-ms-animation: gradient 9s ease infinite;
+	cursor: pointer;
+}
+
+#four:hover h1 {color: white;}
+
+#sampleForm {
+    display: none;
+    width: 100%;
+    height: 745px;
+    background: #012348;
+    margin: auto;
+    margin-left: -10px;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    color: white;
+    padding: 25px;
+}
+
+#x {
+    font-size: 40px;
+    float: left;
+    position: absolute;
+}
+
+#x.stay {
+    position: fixed;
+    top: 250px;
+}
+
+#x:hover {cursor: pointer;}
+
+#five {
+    position: absolute !important;
+    width: calc((32.5% - 7.5px) + (35% - 5px) + 6px - 10px);
+    height: calc(32.5% - 7.5px);
+    z-index: 3;
+    bottom: 0;
+    right: 10px;
+    box-shadow: 3px 0 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.blockHover {
+    background-color: #012348;
+    color: white;
+}
+
+#one.blockHover h2, #two.blockHover h2, #three.blockHover h2, #five.blockHover h2 {
+	border-color: white;
+	text-shadow: 3px 2px 0 #012348, 4px 3px 0 rgba(255,255,255,0.15);
+}
+
+.blockHover::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.blockHover::-webkit-scrollbar-thumb {
+    background-color: white;
+}

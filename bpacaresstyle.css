@@ -1,0 +1,240 @@
+/*
+ *	this stylesheet is to be
+ *	used for all web pages
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Montserrat'); /*font style import*/
+
+::selection {
+	text-shadow:none;
+	color: black;
+	background-color: #f1f1f1;
+}
+::-moz-selection {
+	text-shadow:none;
+	color: black;
+	background-color: #f1f1f1;
+}
+
+* {box-sizing: border-box !important;}
+
+body::-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+body::-webkit-scrollbar {
+    width: 16px;
+    background-color: #f1f1f1;
+}
+body::-moz-scrollbar {
+    width: 16px;
+    background-color: #f1f1f1;
+}
+body::-o-scrollbar {
+    width: 16px;
+    background-color: #f1f1f1;
+}
+body::-ms-scrollbar {
+    width: 16px;
+    background-color: #f1f1f1;
+}
+
+body::-scrollbar-thumb {
+    background-color: #012348;
+    border: 5px solid #f1f1f1;
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #012348;
+    border: 5px solid #f1f1f1;
+    width: 5px;
+}
+body::-moz-scrollbar-thumb {
+	background-color: #012348;
+    border: 5px solid #f1f1f1;
+    width: 5px;
+}
+body::-o-scrollbar-thumb {
+	background-color: #012348;
+    border: 5px solid #f1f1f1;
+    width: 5px;
+}
+body::-ms-scrollbar-thumb {
+	background-color: #012348;
+    border: 5px solid #f1f1f1;
+    width: 5px;
+}
+
+body::-scrollbar-thumb:active {
+	border-width: 3px;
+}
+body::-webkit-scrollbar-thumb:active {
+	border-width: 3px;
+}
+body::-moz-scrollbar-thumb:active {
+	border-width: 3px;
+}
+body::-o-scrollbar-thumb:active {
+	border-width: 3px;
+}
+body::-ms-scrollbar-thumb:active {
+	border-width: 3px;
+}
+
+body {
+    background-color: #f1f1f1;
+	color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+li {list-style-type: square;}
+
+p {
+	line-height: 2em;
+    text-indent: 2em;
+  }
+
+section {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 4;
+}
+
+/*header nav style*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+
+.dropbtn {
+	color: white;
+	border-bottom: solid 2px white;
+	font-weight: lighter;
+	font-size: 16px;
+    padding: 4px 7px;
+	transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+  	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+}
+
+.dropbtn:hover {padding: 4px 7px;}
+
+.dropdownContent {
+	display: none;
+	position: absolute;
+	background-color: #183758;
+	width: auto;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	z-index: 1;
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+.dropdownContent a {
+	color: white;
+	padding: 8px 6px;
+	display: block;
+	border: none;
+}
+
+.dropdownContent a:hover {background-color: #012348;}
+
+.dropdown:hover .dropdownContent {display: block;}
+
+.dropdown:hover .dropbtn {
+	background-color: white;
+	color: navy;
+	padding: 4px 7px;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background: radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background: -webkit-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background: -moz-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background: -o-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+    background: -ms-radial-gradient(ellipse at center, #012348 0%, #B2161D 25%, #012348 50%, #B2161D 75%, #0C1C2D 100%);
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-size: 400% 400%;
+    background-color: #183758;
+	animation: gradient 9s ease infinite;
+	-webkit-animation: gradient 9s ease infinite;
+	-moz-animation: gradient 9s ease infinite;
+	-o-animation: gradient 9s ease infinite;
+    -ms-animation: gradient 9s ease infinite;
+    color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    clear:both;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-animation: all 1s ease;
+    -o-animation: all 1s ease;
+    -ms-animation: all 1s ease;
+	padding: 40px;
+	text-align: right;
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 75% 25%;}
+	75% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+@-webkit-keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	75% {background-position: 75% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+@-moz-keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	75% {background-position: 75% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+@-o-keyframes gradient {
+    0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	75% {background-position: 75% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+@-ms-keyframes gradient {
+    0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	75% {background-position: 75% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+.header.tiny {
+    height: 55px;
+    background: #012348;
+	padding: 17px;
+}
+/*end header nav style*/
